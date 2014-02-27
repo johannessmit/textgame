@@ -5,6 +5,9 @@ class Controller {
     public:
         Controller();
 		~Controller();
+        initAttacks();
+        initCasts();
+        loop();
 
 	protected:
 		int id;

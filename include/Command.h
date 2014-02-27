@@ -5,8 +5,8 @@
 class Commands
 {
     public:
-        Commands();
-        virtual ~Commands();
+        Command(String cName, String[] args);
+        virtual ~Command();
     protected:
     private:
 };

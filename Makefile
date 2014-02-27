@@ -3,7 +3,7 @@ CC=g++
 CFLAGS=
 
 #sourcefiles
-SOURCES=src/main.cpp src/Player.cpp src/Controller.cpp
+SOURCES=src/main.cpp src/Player.cpp src/Controller.cpp src/Entity.cpp src/Command.cpp
 #Directory
 INCLUDEDIR=include/
 #progName

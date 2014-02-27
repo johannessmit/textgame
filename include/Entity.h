@@ -3,6 +3,12 @@
 
 class Entity {
 	public:
+        Entity(int h, int l, int a, int d);
+        void attack();
+        void cast();
+
+        void calcDamage();
+
 		typedef struct {
 			int health;
 			int level;
