@@ -1,15 +1,17 @@
-#ifndev ATTACK_H
+#ifndef ATTACK_H
 #define ATTACK_H
+
+#include <string>
 
 class Attack {
     public:
-        Attack(String aName, int aDamage, int aType, int aSpecial, int aLevel);
+        Attack(std::string aName, int aDamage, int aType, int aSpecial, int aLevel);
         virtual ~Attack();
 
     protected:
 
     private:
-        String aName
+        std::string aName;
         typedef struct {
             int damage;
             int type;

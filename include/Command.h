@@ -1,12 +1,13 @@
 #ifndef COMMANDS_H
 #define COMMANDS_H
 
+#include <string>
 
-class Commands
+class Command
 {
     public:
-        Command(String cName, String[] args);
-        virtual ~Command();
+        Command(std::string cName, std::string[] args);
+        ~Command();
     protected:
     private:
 };

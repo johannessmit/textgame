@@ -7,13 +7,17 @@ class Player: public Entity {
 
     public:
 		Player(int h, int l, int a, int d);
+        void attack();
+        void cast();
+
+        void calcDamage();
 
         int		adjustPlayerHealth(int a);
         bool    addPlayerExp(int a);
 		Entity::Stats* getPlayerStats();
 
     protected:
-		Entity::Stats* mStats;
+		//Entity::Stats* mStats;
         //int loadout [6];
         //int inventory [10];
 

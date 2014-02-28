@@ -9,8 +9,7 @@ INCLUDEDIR=include/
 #progName
 PROGNAME=Textgame
 
-all:
-	g++ -I$(INCLUDEDIR) $(SOURCES) -o $(PROGNAME)
+all: Release
 
 Debug:
 	g++ -I$(INCLUDEDIR) $(SOURCES) -o debug/$(PROGNAME)

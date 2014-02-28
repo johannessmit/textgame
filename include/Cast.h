@@ -1,15 +1,17 @@
 #ifndef CAST_H
 #define CAST_H
 
+#include <string>
+
 class Cast {
     public:
-        Cast(String cName, int cDamage, int cType, int cSpecial, int cLevel);
-        virtual ~Cast();
+        Cast(std::string cName, int cDamage, int cType, int cSpecial, int cLevel);
+        ~Cast();
 
     protected:
 
     private:
-        String cName
+        std::string cName;
         typedef struct {
             int damage;
             int type;

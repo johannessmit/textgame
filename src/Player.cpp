@@ -1,8 +1,7 @@
 #include <Player.h>
 
-Player::Player(int h, int l, int a, int d) {
+Player::Player(int h, int l, int a, int d) : Entity(h, l, a, d) {
     mStats = new Entity::Stats;
-
     mStats->health = h;
     mStats->level = l;
     mStats->armor = a;

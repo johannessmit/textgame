@@ -16,6 +16,8 @@ class Entity {
 			int armor;
 			int damage;
 		} Stats;
+    protected:
+        Stats* mStats;
 };
 
 #endif

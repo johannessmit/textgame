@@ -1,6 +1,7 @@
 #include <iostream>
 #include <Controller.h>
 #include <Player.h>
+#include <Entity.h>
 #include <Attack.h>
 #include <Cast.h>
 
