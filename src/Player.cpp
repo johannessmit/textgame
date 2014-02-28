@@ -1,12 +1,8 @@
 #include <Player.h>
+#include <iostream>
 
-Player::Player(int h, int l, int a, int d) : Entity(h, l, a, d) {
-    mStats = new Entity::Stats;
-    mStats->health = h;
-    mStats->level = l;
-    mStats->armor = a;
-    mStats->damage = d;
-    mStats->exp = 0;
+Player::Player(int h, int l, int a, int d, int x, int y) : Entity(h, l, a, d,x,y) {
+    std::cout << "I do stuff ^^ \n" << std::flush;
 }
 
 int Player::adjustPlayerHealth(int a) {

@@ -3,7 +3,7 @@
 
 class Entity {
 	public:
-        Entity(int h, int l, int a, int d);
+        Entity(int h, int l, int a, int d, int x, int y);
         void attack();
         void cast();
 
@@ -16,8 +16,13 @@ class Entity {
 			int armor;
 			int damage;
 		} Stats;
+        typedef struct {
+            int x;
+            int y;
+        } Location;
     protected:
         Stats* mStats;
+        Location* mLocation;
 };
 
 #endif

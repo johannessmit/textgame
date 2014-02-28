@@ -6,7 +6,7 @@
 class Player: public Entity {
 
     public:
-		Player(int h, int l, int a, int d);
+		Player(int h, int l, int a, int d, int x, int y);
         void attack();
         void cast();
 
@@ -17,7 +17,6 @@ class Player: public Entity {
 		Entity::Stats* getPlayerStats();
 
     protected:
-		//Entity::Stats* mStats;
         //int loadout [6];
         //int inventory [10];
 

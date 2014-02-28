@@ -1,9 +1,9 @@
 #Variables
 CC=g++
-CFLAGS=
+CFLAGS=-std=c++0x
 
 #sourcefiles
-SOURCES=src/main.cpp src/Player.cpp src/Controller.cpp src/Entity.cpp src/Command.cpp
+SOURCES=src/Command.cpp src/Controller.cpp src/Entity.cpp src/main.cpp src/Player.cpp src/CommandListener.cpp
 #Directory
 INCLUDEDIR=include/
 #progName
@@ -12,7 +12,7 @@ PROGNAME=Textgame
 all: Release
 
 Debug:
-	g++ -I$(INCLUDEDIR) $(SOURCES) -o debug/$(PROGNAME)
+	$(CC) $(CFLAGS) -I$(INCLUDEDIR) $(SOURCES) -o debug/$(PROGNAME)
 
 Release:
-	g++ -I$(INCLUDEDIR) $(SOURCES) -o release/$(PROGNAME)
+	$(CC) $(CFLAGS) -I$(INCLUDEDIR) $(SOURCES) -o release/$(PROGNAME)

@@ -5,6 +5,7 @@ class Controller {
     public:
         Controller();
 		~Controller();
+        void init();
         void initAttacks();
         void initCasts();
         void loop();
