@@ -3,7 +3,7 @@ CC=g++
 CFLAGS=-std=c++0x
 
 #sourcefiles
-SOURCES=src/Command.cpp src/Controller.cpp src/Entity.cpp src/main.cpp src/Player.cpp src/CommandListener.cpp
+SOURCES=src/Command.cpp src/Controller.cpp src/Entity.cpp src/main.cpp src/Player.cpp src/CommandListener.cpp src/ExitCommand.cpp
 #Directory
 INCLUDEDIR=include/
 #progName

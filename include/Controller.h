@@ -1,6 +1,8 @@
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
 
+#include <string>
+
 class Controller {
     public:
         Controller();
@@ -12,6 +14,8 @@ class Controller {
 
 	protected:
 		int id;
+        std::string command;
+        bool run;
 };
 
 #endif

@@ -7,11 +7,9 @@
 class Command
 {
     public:
-        Command(std::string name, std::vector<std::string> args);
-        ~Command();
+        Command();
         bool execute(std::vector<std::string> args);
     protected:
-        std::string cName;
         std::vector<std::string> cArgs;
     private:
 };

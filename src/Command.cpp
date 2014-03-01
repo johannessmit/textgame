@@ -3,9 +3,8 @@
 #include <vector>
 #include <iostream>
 
-Command::Command(std::string name, std::vector<std::string> args) {
-    cName = name;
-    cArgs = args;
+Command::Command() {
+
 }
 
 bool Command::execute(std::vector<std::string> args) {
@@ -13,4 +12,3 @@ bool Command::execute(std::vector<std::string> args) {
         return false;
     }
 }
-
