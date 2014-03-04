@@ -8,7 +8,7 @@ class Command
 {
     public:
         Command();
-        bool execute(std::vector<std::string> args);
+        virtual bool execute(std::string cString);
     protected:
         std::vector<std::string> cArgs;
     private:

@@ -12,7 +12,12 @@ CommandListener::CommandListener() {
 }
 
 bool CommandListener::loop(std::string cString) {
-
+    for(int i = 0; i < cCallList->size(); i++) {
+       if(cString == cCallList->at(i)) {
+            commandList->at(i)->execute(cString);
+            break;
+        }
+    }
 }
 
 //Actually works at first try :O

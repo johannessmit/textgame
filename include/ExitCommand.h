@@ -8,7 +8,7 @@ class ExitCommand : public Command {
     public:
         ExitCommand(Controller* controller);
         ~ExitCommand();
-        bool execute(std::vector<std::string> args);
+        bool execute(std::string args);
     protected:
 
     private:

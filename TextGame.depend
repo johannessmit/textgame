@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1393937266 source:/home/johannes/Projects/cpp/TextGame/src/CommandListener.cpp
+	<CommandListener.h>
+	<iostream>
+	<vector>
+	<string>
+	<Command.h>
+
+1393715646 /home/johannes/Projects/cpp/TextGame/include/CommandListener.h
+	<vector>
+	<string>
+	<Command.h>
+
+1393937127 /home/johannes/Projects/cpp/TextGame/include/Command.h
+	<string>
+	<vector>
+
+1393624693 source:/home/johannes/Projects/cpp/TextGame/src/Entity.cpp
+	<Entity.h>
+
+1393624693 /home/johannes/Projects/cpp/TextGame/include/Entity.h
+
+1393937222 source:/home/johannes/Projects/cpp/TextGame/src/ExitCommand.cpp
+	<ExitCommand.h>
+	<Controller.h>
+	<iostream>
+
+1393933134 /home/johannes/Projects/cpp/TextGame/include/ExitCommand.h
+	<Command.h>
+	<Controller.h>
+
+1393933822 /home/johannes/Projects/cpp/TextGame/include/Controller.h
+	<string>
+	<CommandListener.h>
+
+1393624693 source:/home/johannes/Projects/cpp/TextGame/src/Player.cpp
+	<Player.h>
+	<iostream>
+
+1393624693 /home/johannes/Projects/cpp/TextGame/include/Player.h
+	<Entity.h>
+
+1393538844 source:/home/johannes/Projects/cpp/TextGame/src/main.cpp
+	<iostream>
+	<Player.h>
+	<Controller.h>
+
+1393933100 source:/home/johannes/Projects/cpp/TextGame/src/Command.cpp
+	<Command.h>
+	<string>
+	<vector>
+	<iostream>
+
+1393938288 source:/home/johannes/Projects/cpp/TextGame/src/Controller.cpp
+	<iostream>
+	<vector>
+	<string>
+	<Controller.h>
+	<Player.h>
+	<Entity.h>
+	<Attack.h>
+	<Cast.h>
+	<Command.h>
+	<CommandListener.h>
+	<ExitCommand.h>
+	<HelpCommand.h>
+
+1393585118 /home/johannes/Projects/cpp/TextGame/include/Attack.h
+	<string>
+
+1393585118 /home/johannes/Projects/cpp/TextGame/include/Cast.h
+	<string>
+
+1393933565 source:/home/johannes/Projects/cpp/TextGame/src/HelpCommand.cpp
+	"HelpCommand.h"
+
+1393938420 /home/johannes/Projects/cpp/TextGame/include/HelpCommand.h
+	<string>
+	<Command.h>
+

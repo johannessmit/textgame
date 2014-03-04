@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TextGame" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TextGame" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TextGame" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="include/Attack.h" />
+		<Unit filename="include/Cast.h" />
+		<Unit filename="include/Command.h" />
+		<Unit filename="include/CommandListener.h" />
+		<Unit filename="include/Controller.h" />
+		<Unit filename="include/Entity.h" />
+		<Unit filename="include/ExitCommand.h" />
+		<Unit filename="include/Player.h" />
+		<Unit filename="src/Command.cpp" />
+		<Unit filename="src/CommandListener.cpp" />
+		<Unit filename="src/Controller.cpp" />
+		<Unit filename="src/Entity.cpp" />
+		<Unit filename="src/ExitCommand.cpp" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

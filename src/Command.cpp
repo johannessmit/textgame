@@ -7,8 +7,8 @@ Command::Command() {
 
 }
 
-bool Command::execute(std::vector<std::string> args) {
-    if(args.size() != cArgs.size()) {
-        return false;
-    }
+bool Command::execute(std::string cString) {
+    //if(args.size() != cArgs.size()) {
+    //    return false;
+    //}
 }

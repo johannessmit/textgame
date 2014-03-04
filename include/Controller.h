@@ -2,6 +2,7 @@
 #define CONTROLLER_H
 
 #include <string>
+#include <CommandListener.h>
 
 class Controller {
     public:
@@ -11,10 +12,12 @@ class Controller {
         void initAttacks();
         void initCasts();
         void loop();
+        void exit();
 
 	protected:
 		int id;
         std::string command;
+        CommandListener* commandListener;
         bool run;
 };
 

@@ -10,6 +10,7 @@
 #include <Command.h>
 #include <CommandListener.h>
 #include <ExitCommand.h>
+#include <HelpCommand.h>
 
 Controller::Controller() {
     run = true;
@@ -26,14 +27,14 @@ Controller::~Controller() {
 }
 
 void Controller::init() {
-    Command* walkCommand = new Command();
     ExitCommand* exitCommand = new ExitCommand(this);
+    HelpCommand* helpCommand = new HelpCommand();
 
-    CommandListener* commandListener = new CommandListener;
+    commandListener = new CommandListener;
 
     commandListener->listenTo("/");
-    commandListener->addCommand("exit", exitCommand);
-    commandListener->addCommand("w", walkCommand);
+    commandListener->addCommand("/exit", exitCommand);
+    commandListener->addCommand("/help", helpCommand);
 }
 
 void Controller::initAttacks() {
@@ -43,6 +44,22 @@ void Controller::initAttacks() {
 void Controller::loop() {
     while(run == true) {
         std::cin >> command;
-
+        char comChar = command.at(0);
+        std::cout << comChar << "\n";
+        switch(comChar) {
+            case '/':
+                commandListener->loop(command);
+                break;
+            default:
+                std::cout << "Input is not valid, for help, do: '/help' \n";
+                break;
+        }
     }
+}
+
+void Controller::exit() {
+    std::cout << "Exit program \n";
+    run = false;
+    std::cout << run;
+
 }
